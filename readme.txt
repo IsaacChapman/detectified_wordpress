@@ -7,3 +7,4 @@ Address findings discovered by Detectify scan
 
 == Installation ==
 Add to your wp-content/plugins directory and activate
+

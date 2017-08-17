@@ -83,3 +83,10 @@ add_action( 'pre_comment_on_post', function () {
     }
 }, 10 );
 
+/*
+ * Add 'X-Frame-Options: SAMEORIGIN' http header for 'Side Channel Authentication Token Leakage'
+ * Inspired by https://wordpress.org/plugins/http-headers/
+ */
+add_action( 'send_headers', function () {
+    header( 'X-Frame-Options: SAMEORIGIN' );
+});
